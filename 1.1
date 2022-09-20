@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+    float x1,x2,x3,y1,y2,y3;
+    float a,b,c,p;
+    printf("Enter a value of x1: ");
+    scanf("%f",&x1);
+    printf("Enter a value of x2: ");
+    scanf("%f",&x2);
+    printf("Enter a value of x3: ");
+    scanf("%f",&x3);
+    printf("Enter a value of y1: ");
+    scanf("%f",&y1);
+    printf("Enter a value of y2: ");
+    scanf("%f",&y2);
+    printf("Enter a value of y3: ");
+    scanf("%f",&y3);
+    a = sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1));
+    printf("Side of the triangle a = %f \n",a);
+    b = sqrt((x3-x2)*(x3-x2)+(y3-y2)*(y3-y2));
+    printf("Side of the triangle b = %f \n",b);
+    c = sqrt((x3-x1)*(x3-x1)+(y3-y1)*(y3-y1));
+    printf("Side of the triangle c = %f \n",c);
+    p=a+b+c;
+    printf("The perimeter of the triangle is equal to: %f \n",p);
+    return 0;
+}
